@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <select class="head">
+      <option value="Temperature">Temperature</option>
+      <option value="Length">Length</option>
+      <option value="Mass">Mass</option>
+    </select>
+    <h4>Your  Input</h4>
+    <input type="number" class="input" value="0"></input>
+    <!--temperature-->
+    <div class="temp">
+      <select name="units_temp" id="units_temp">  
+        <option value="Celcius">Celcius</option>
+        <option value="Farenhite">Farenhite</option>
+        <option value="Kelvin">Kelvin</option>
+      </select>
+      <h4>Your  results</h4>
+      <input type="number" class="results" value="0" disabled></input>
+      <select name="units_temps" id="units_temps">  
+        <option value="Celcius">Celcius</option>
+        <option value="Farenhite">Farenhite</option>
+        <option value="Kelvin">Kelvin</option>
+      </select>
+    </div>
+    <!--length-->
+    <div class="len">
+      <select name="units_len" id="units_len">
+        <option value="Meters">Meters</option>
+        <option value="Kilometers">Kilometers</option>
+        <option value="Centimeters">Centimeters</option>
+      </select>
+      <h4>Your  results</h4>
+      <input type="number" class="results" value="0" disabled></input>
+      <select name="units_lens" id="units_lens">
+        <option value="Meters">Meters</option>
+        <option value="Kilometers">Kilometers</option>
+        <option value="Centimeters">Centimeters</option>
+      </select>
+    </div>
+    <!--mass-->
+    <div class="mass">
+      <select name="units_mass" id="units_mass">
+        <option value="Kg">Kg</option>
+        <option value="grams">grams</option>
+        <option value="Ponds">Ponds</option>
+      </select>
+      <h4>Your  results</h4>
+      <input type="number" class="results" value="0" disabled></input>
+      <select name="units_masss" id="units_masss">
+        <option value="Kg">Kg</option>
+        <option value="grams">grams</option>
+        <option value="Ponds">Ponds</option>
+      </select>
+    </div>
+    <div id="butt">
+      <button id="clear">Clear</button>
+      <button id="convert">Convert</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
